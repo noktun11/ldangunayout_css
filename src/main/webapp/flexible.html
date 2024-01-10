@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>CSS 레이아웃 실습</title>
+<style>
+.container {
+width:500px;
+height:300px;
+	border: 1px dashed darkred;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	justify-content: center;
+}
+.item {
+	width:50px;
+	height:50px;
+	border: 1px solid #333;
+	padding: 1rem;
+	margin:.5rem;
+}
+.item2{
+	align-self: flex-end;
+
+}
+</style>
 </head>
 <body>
 
+	<h2>플렉스 박스 실습</h2>
+	<div class="container">
+		<div class="item item1">1</div>
+		<div class="item item2">2</div>
+		<div class="item item3">3</div>
+
+	</div>
+
+
 </body>
-</html>
+</html> 
